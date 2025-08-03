@@ -1,74 +1,54 @@
-**Proyek CSV to Chart Tokenization**
-**Deskripsi Program**
+📊 Proyek CSV to Chart Tokenization
+<div align="center">
+<img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python Version">
+<img src="https://img.shields.io/badge/Flask-2.x-lightgray" alt="Flask Version">
+<img src="https://img.shields.io/badge/Matplotlib-Graph-green" alt="Matplotlib">
+</div>
 
-Proyek ini adalah aplikasi web sederhana yang dibangun dengan framework Python Flask. 
-Aplikasi ini memungkinkan pengguna untuk mengunggah file CSV yang berisi data "Tokenize" dan "Detokenize". Setelah file diunggah, program akan memproses data tersebut dan membuat grafik garis menggunakan library Matplotlib. 
+📝 Deskripsi Proyek
+Proyek ini adalah aplikasi web sederhana yang dibangun menggunakan framework Python Flask. Aplikasi ini dirancang untuk mempermudah visualisasi data dari file CSV. Pengguna dapat mengunggah file CSV yang berisi data Tokenize dan Detokenize, dan aplikasi akan secara otomatis membuat grafik garis yang interaktif dan informatif.
 
-Grafik yang dihasilkan kemudian akan ditampilkan di halaman web.
+Fitur utama:
 
-File-file utama dalam proyek ini adalah:
+Unggah File CSV: Antarmuka yang mudah digunakan untuk mengunggah file CSV.
 
-app.py: Kode utama aplikasi web Flask yang menangani unggahan file dan rendering halaman.
+Visualisasi Otomatis: Program akan memproses data CSV yang diunggah dan membuat grafik garis.
 
-plot_chart.py: Skrip Python yang bertanggung jawab untuk membaca file CSV dan membuat grafik.
+Penyesuaian Judul: Pengguna dapat memberikan judul khusus untuk setiap grafik yang dihasilkan.
 
-templates/: Folder yang berisi file-file HTML untuk tampilan antarmuka pengguna.
+Tampilan Grafik: Grafik yang dihasilkan akan ditampilkan di halaman web baru, siap untuk dilihat dan dianalisis.
 
-static/: Folder untuk menyimpan file-file statis seperti gambar grafik yang dihasilkan.
+🚀 Persyaratan dan Instalasi
+1. Prasyarat
+Pastikan Anda memiliki Python dan Git terinstal di sistem Anda.
 
-uploads/: Folder untuk menyimpan sementara file CSV yang diunggah oleh pengguna.
-
-**Prasyarat**
-Sebelum menjalankan program, pastikan Anda telah menginstal Python dan Git di sistem Anda.
-Program ini membutuhkan beberapa library Python. Anda dapat menginstalnya menggunakan pip:
-
-Flask
-
-Pandas
-
-Matplotlib
-
-Werkzeug
-
-**Langkah-langkah Menjalankan Program**
-Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di komputer lokal Anda:
-
-1. Kloning Repositori
-Jika Anda belum mengkloning repositori ini, gunakan Git untuk mengambil semua file dari GitHub:
-
+2. Kloning Repositori
 Bash
 
 git clone https://github.com/ariefsopian/csvtochart-tokenization.git
 cd csvtochart-tokenization
-2. Instalasi Dependensi
-Pastikan Anda berada di direktori proyek, lalu instal semua library yang diperlukan:
+3. Instalasi Dependensi
+Proyek ini memerlukan beberapa library Python. Disarankan untuk menggunakan virtual environment (venv) untuk mengelola dependensi.
 
 Bash
 
-pip install Flask pandas matplotlib werkzeug
-(Catatan: Anda mungkin ingin menggunakan lingkungan virtual (venv) untuk mengelola dependensi ini.)
+# Buat dan aktifkan virtual environment (opsional tapi direkomendasikan)
+python -m venv venv
+# Untuk Windows:
+venv\Scripts\activate
+# Untuk macOS/Linux:
+source venv/bin/activate
 
-3. Menjalankan Aplikasi
-Jalankan file app.py dari terminal Anda:
+# Instal dependensi yang diperlukan
+pip install Flask pandas matplotlib werkzeug
+▶️ Cara Menjalankan Aplikasi
+Pastikan Anda berada di direktori proyek csvtochart-tokenization.
+
+Jalankan server Flask dengan perintah berikut:
 
 Bash
 
 python app.py
-Anda akan melihat output seperti ini, yang menunjukkan bahwa server sudah berjalan:
+Setelah server berjalan, buka browser web Anda dan kunjungi alamat: http://127.0.0.1:5001.
 
- * Serving Flask app 'app'
- * Debug mode: on
- * Running on http://127.0.0.1:5001
-Press CTRL+C to quit
-Server akan berjalan secara default di port 5001.
-
-4. Menggunakan Aplikasi
-Buka browser web Anda dan navigasi ke alamat berikut: http://127.0.0.1:5001.
-
-Anda akan melihat halaman "Unggah File CSV".
-
-Klik "Choose File" untuk memilih file CSV dari komputer Anda.
-
-Masukkan judul yang Anda inginkan untuk grafik di kolom "Judul Grafik".
-
-Klik tombol "Unggah" untuk mengirim file dan melihat grafik yang dihasilkan.
+Aplikasi siap digunakan. Unggah file CSV Anda dan berikan judul untuk melihat grafik yang dihasilkan!
