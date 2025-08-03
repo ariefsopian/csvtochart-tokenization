@@ -1,6 +1,10 @@
-Proyek CSV to Chart Tokenization
-Deskripsi Program
-Proyek ini adalah aplikasi web sederhana yang dibangun dengan framework Python Flask. Aplikasi ini memungkinkan pengguna untuk mengunggah file CSV yang berisi data "Tokenize" dan "Detokenize". Setelah file diunggah, program akan memproses data tersebut dan membuat grafik garis menggunakan library Matplotlib. Grafik yang dihasilkan kemudian akan ditampilkan di halaman web.
+**Proyek CSV to Chart Tokenization**
+**Deskripsi Program**
+
+Proyek ini adalah aplikasi web sederhana yang dibangun dengan framework Python Flask. 
+Aplikasi ini memungkinkan pengguna untuk mengunggah file CSV yang berisi data "Tokenize" dan "Detokenize". Setelah file diunggah, program akan memproses data tersebut dan membuat grafik garis menggunakan library Matplotlib. 
+
+Grafik yang dihasilkan kemudian akan ditampilkan di halaman web.
 
 File-file utama dalam proyek ini adalah:
 
@@ -14,7 +18,7 @@ static/: Folder untuk menyimpan file-file statis seperti gambar grafik yang diha
 
 uploads/: Folder untuk menyimpan sementara file CSV yang diunggah oleh pengguna.
 
-Prasyarat
+**Prasyarat**
 Sebelum menjalankan program, pastikan Anda telah menginstal Python dan Git di sistem Anda.
 Program ini membutuhkan beberapa library Python. Anda dapat menginstalnya menggunakan pip:
 
@@ -26,7 +30,7 @@ Matplotlib
 
 Werkzeug
 
-Langkah-langkah Menjalankan Program
+**Langkah-langkah Menjalankan Program**
 Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di komputer lokal Anda:
 
 1. Kloning Repositori
